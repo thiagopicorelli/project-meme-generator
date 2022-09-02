@@ -16,7 +16,7 @@ function atualizaTexto() {
 inputTexto.addEventListener('input', atualizaTexto);
 
 function atualizaImagem(event) {
-  let fr = new FileReader();
+  const fr = new FileReader();
 
   fr.addEventListener('load', () => {
     memeImagem.src = fr.result;
@@ -27,7 +27,7 @@ function atualizaImagem(event) {
 
 inputImagem.addEventListener('change', atualizaImagem);
 
-let bordas = {
+const bordas = {
   fire: '3px dashed red',
   water: '5px double blue',
   earth: '6px groove green',
@@ -37,6 +37,14 @@ function atualizaBorda(tipo) {
   memeContainer.style.border = bordas[tipo];
 }
 
-fireButton.addEventListener('click', () => {atualizaBorda('fire');});
-waterButton.addEventListener('click', () => {atualizaBorda('water');});
-earthButton.addEventListener('click', () => {atualizaBorda('earth');});
+fireButton.addEventListener('click', () => { atualizaBorda('fire'); });
+waterButton.addEventListener('click', () => { atualizaBorda('water'); });
+earthButton.addEventListener('click', () => { atualizaBorda('earth'); });
+
+function memePronto(event) {
+  memeImagem.src = event.target.src;
+}
+
+for (let i = 1; i <= 4; i += 1) {
+  document.getElementById(`meme-${i}`).addEventListener('click', memePronto);
+}
