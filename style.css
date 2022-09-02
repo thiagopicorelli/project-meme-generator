@@ -7,6 +7,18 @@
   background-color: white;
 }
 
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
 #meme-image {
   margin: 0;
   width: 100%;
