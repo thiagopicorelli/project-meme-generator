@@ -1,25 +1,25 @@
 #meme-image-container {
-    display: block;
-    position: relative;
-    width: 1000px;
-    height: 500px;
-    border: 1px solid black;
-    background-color: white;
-    text-align: center;
+  display: block;
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  border: 1px solid black;
+  background-color: white;
 }
 
 #meme-image {
-    margin: 0;
-    width: 100%;
-    height: 100%;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border: 'none';
 }
 
 #meme-text {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    bottom: 15px;
-    text-shadow: 5px 5px 5px black;
-    font-size: 30px;
-    color: white;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 15px;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
 }
